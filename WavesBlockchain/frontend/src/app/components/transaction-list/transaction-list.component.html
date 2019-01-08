@@ -1,0 +1,101 @@
+<div [hidden]="transactions == null || transactions.length == 0">
+
+  <div class="column" style="background-color: #969696">
+    <span style="float: left;"><h4>Transactions (Type {{type}})</h4></span>
+    <span style="float: right;"></span>
+  </div>
+
+  <mat-table [dataSource]="dataSource" [class.isMobile]="isMobile" matSort matSortActive="type" matSortDirection="asc"
+             matSortDisableClear>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef>ID</mat-header-cell>
+      <mat-cell *matCellDef="let transaction">
+        <span class="mobile-label">ID:</span>
+        <a [routerLink]="['/transactionDetails', transaction.id]">
+          {{ (transaction.id!=null && transaction.id.length>14) ? (transaction.id | slice:0:14)+'...' : (transaction.id)
+          }}
+        </a>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="sender">
+      <mat-header-cell *matHeaderCellDef>Sender</mat-header-cell>
+      <mat-cell *matCellDef="let transaction">
+        <span class="mobile-label">Sender:</span>
+        <a [routerLink]="['/addressDetails', transaction.sender]">
+          {{ (transaction.sender!=null && transaction.sender.length>14) ? (transaction.sender | slice:0:14)+'...' :
+          (transaction.sender) }}
+        </a>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="recipient">
+      <mat-header-cell *matHeaderCellDef>Recipient</mat-header-cell>
+      <mat-cell *matCellDef="let transaction">
+        <span class="mobile-label">Recipient:</span>
+        <a [routerLink]="['/addressDetails', transaction.recipient]">
+          {{ (transaction.recipient!=null && transaction.recipient.length>14) ? (transaction.recipient |
+          slice:0:14)+'...' : (transaction.recipient) }}
+        </a>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="price">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Price</mat-header-cell>
+      <mat-cell *matCellDef="let transaction">
+        <span class="mobile-label">Price:</span>
+        {{transaction.price | number}}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="amount">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Amount</mat-header-cell>
+      <mat-cell *matCellDef="let transaction">
+        <span class="mobile-label">Amount:</span>
+        {{transaction.amount | number}}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="fee">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Fee</mat-header-cell>
+      <mat-cell *matCellDef="let transaction">
+        <span class="mobile-label">Fee:</span>
+        {{transaction.fee | number}}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="quantity">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Quantity</mat-header-cell>
+      <mat-cell *matCellDef="let transaction">
+        <span class="mobile-label">Quantity:</span>
+        {{transaction.quantity | number}}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="assetId">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Asset ID</mat-header-cell>
+      <mat-cell *matCellDef="let transaction">
+        <span class="mobile-label">Asset ID:</span>
+        {{ (transaction.assetId!=null && transaction.assetId.length>14) ? (transaction.assetId | slice:0:14)+'...' :
+        (transaction.assetId) }}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="leaseId">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Lease ID</mat-header-cell>
+      <mat-cell *matCellDef="let transaction">
+        <span class="mobile-label">Lease ID:</span>
+        {{transaction.leaseId | number}}
+      </mat-cell>
+    </ng-container>
+
+  </mat-table>
+  <mat-paginator [hidePageSize]="true" [pageSize]="5"></mat-paginator>
+
+  <br/>
+  <br/>
+</div>

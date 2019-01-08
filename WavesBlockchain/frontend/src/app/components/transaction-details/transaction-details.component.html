@@ -1,0 +1,148 @@
+<div class="content" *ngIf="transaction != null">
+
+  <div class="loading-shade" *ngIf="isloading">
+    <mat-spinner></mat-spinner>
+  </div>
+
+  <div class="column">
+    <span style="float: left;"><h4>Transaction</h4></span>
+    <span style="float: right;"></span>
+  </div>
+
+  <div class="info-table">
+    <div class="info-row">
+      <div class="info-name">ID</div>
+      <div class="info-value">{{transaction.id}}</div>
+    </div>
+
+    <div class="info-row">
+      <div class="info-name">Type</div>
+      <div class="info-value">{{transaction.type}}</div>
+    </div>
+
+    <div class="info-row">
+      <div class="info-name">Timestamp</div>
+      <div class="info-value">{{transaction.timestamp | date:'dd.MM.yyyy, HH:mm:ss'}}</div>
+    </div>
+
+    <div class="info-row">
+      <div class="info-name">Block</div>
+      <div class="info-value">{{transaction.height}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==3 || transaction.type==4 || transaction.type==8">
+      <div class="info-name">Asset</div>
+      <div class="info-value">{{asset.name}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==4 || transaction.type==7 || transaction.type==8">
+      <div class="info-name">Amount</div>
+      <div class="info-value">{{transaction.amount | number}}</div>
+    </div>
+
+    <div class="info-row"
+         *ngIf="transaction.type==3 || transaction.type==4 || transaction.type==7 || transaction.type==8 || transaction.type==9">
+      <div class="info-name">Fee</div>
+      <div class="info-value">{{transaction.fee | number}} {{asset.name}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==3 || transaction.type==4 || transaction.type==8 || transaction.type==11">
+      <div class="info-name">Asset ID</div>
+      <div class="info-value">{{transaction.assetId}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==11">
+      <div class="info-name">Fee</div>
+      <div class="info-value">{{transaction.fee | number}}</div>
+    </div>
+
+    <div class="info-row"
+         *ngIf="transaction.type==3 || transaction.type==4 || transaction.type==7 || transaction.type==8 || transaction.type==9 || transaction.type==11">
+      <div class="info-name">Sender</div>
+      <div class="info-value"><a [routerLink]="['/addressDetails', transaction.sender]">{{transaction.sender}}</a></div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==3 || transaction.type==8 || transaction.type==9">
+      <div class="info-name">Sender Public Key</div>
+      <div class="info-value">{{transaction.senderPublicKey}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==4 || transaction.type==8">
+      <div class="info-name">Recipient</div>
+      <div class="info-value"><a [routerLink]="['/addressDetails', transaction.recipient]">{{transaction.recipient}}</a>
+      </div>
+    </div>
+
+    <div class="info-row"
+         *ngIf="transaction.type==3 || transaction.type==4 || transaction.type==7 || transaction.type==8 || transaction.type==9">
+      <div class="info-name">Signature</div>
+      <div class="info-value">{{transaction.signature}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==8">
+      <div class="info-name">Status</div>
+      <div class="info-value">{{transaction.status}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==11">
+      <div class="info-name">Transfer Count</div>
+      <div class="info-value">{{transaction.transferCount}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==11">
+      <div class="info-name">Total Amount</div>
+      <div class="info-value">{{transaction.totalAmount | number}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==11">
+      <div class="info-name">Attachment</div>
+      <div class="info-value">{{transaction.attachment}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==7">
+      <div class="info-name">Buy Matcher Fee</div>
+      <div class="info-value">{{transaction.buyMatcherFee}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==7">
+      <div class="info-name">Sell Matcher Fee</div>
+      <div class="info-value">{{transaction.sellMatcherFee}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==9">
+      <div class="info-name">Lease ID</div>
+      <div class="info-value">{{transaction.leaseId}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==3">
+      <div class="info-name">Name</div>
+      <div class="info-value">{{transaction.name}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==3">
+      <div class="info-name">Description</div>
+      <div class="info-value">{{transaction.description}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==3">
+      <div class="info-name">Quantity</div>
+      <div class="info-value">{{transaction.quantity}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==3">
+      <div class="info-name">Decimals</div>
+      <div class="info-value">{{transaction.decimals}}</div>
+    </div>
+
+    <div class="info-row" *ngIf="transaction.type==3">
+      <div class="info-name">Reissuable</div>
+      <div class="info-value">{{transaction.reissuable}}</div>
+    </div>
+
+  </div>
+
+  <app-order-details [data]="transaction.order1" [name]="'Order 1'" *ngIf="transaction.type==7"></app-order-details>
+  <app-order-details [data]="transaction.order2" [name]="'Order 2'" *ngIf="transaction.type==7"></app-order-details>
+  <app-transfer-list [data]="transaction.transfers" *ngIf="transaction.type==11"></app-transfer-list>
+
+</div>

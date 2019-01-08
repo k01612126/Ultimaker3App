@@ -1,0 +1,23 @@
+@media(max-width: 600px) {
+  .mobile-label {
+    width: 85px;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .mat-header-row {
+    display: none;
+  }
+
+  .mat-row {
+    flex-direction: column;
+    align-items: start;
+    padding: 8px 24px;
+  }
+}
+
+::ng-deep .mat-paginator-container {
+  display: flex !important;
+  justify-content: center !important;
+}
+

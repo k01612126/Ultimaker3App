@@ -1,0 +1,13 @@
+<div class="column">
+  <span style="float: left;"><h4>Transfers</h4></span>
+  <span style="float: right;"></span>
+</div>
+<div class="info-table">
+  <div class="info-row" *ngFor="let d of data">
+    <div class="info-name">Recipient</div>
+
+    <div class="info-value"><a [routerLink]="['/addressDetails', d.recipient]">{{d.recipient}}</a></div>
+    <div class="info-name">Amount</div>
+    <div class="info-value">{{d.amount | number}}</div>
+  </div>
+</div>

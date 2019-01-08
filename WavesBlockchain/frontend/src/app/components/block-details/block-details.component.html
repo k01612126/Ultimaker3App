@@ -1,0 +1,62 @@
+<div class="content" *ngIf="blockHeader != null" #content>
+
+  <div class="loading-shade" *ngIf="isLoading">
+    <mat-spinner></mat-spinner>
+  </div>
+
+  <div class="column">
+    <span style="float: left;"><h4>Block #{{blockHeader.height}}</h4></span>
+    <span style="float: right;">
+      <button mat-raised-button [disabled]="blockHeight<=1" [routerLink]="['../', (blockHeight-1)]">Prev</button>
+      <button mat-raised-button [disabled]="blockHeight>=maxBlockHeight" [routerLink]="['../', blockHeight+1]">Next</button>
+    </span>
+  </div>
+
+    <div class="info-table">
+      <div class="info-row">
+        <div class="info-name">Height</div>
+        <div class="info-value">{{blockHeader.height}}</div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-name">Version</div>
+        <div class="info-value">{{blockHeader.version}}</div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-name">Timestamp</div>
+        <div class="info-value">{{blockHeader.timestamp | date:'dd.MM.yyyy, HH:mm:ss'}}</div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-name">Transactions</div>
+        <div class="info-value">{{blockHeader.transactionCount}}</div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-name">Parent Block</div>
+        <div class="info-value">{{blockHeader.reference}}</div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-name">Generator</div>
+        <div class="info-value"><a [routerLink]="['/addressDetails', blockHeader.generator]">{{blockHeader.generator}}</a></div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-name">Signature</div>
+        <div class="info-value">{{blockHeader.signature}}</div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-name">Size</div>
+        <div class="info-value">{{blockHeader.blocksize | number}} bytes</div>
+      </div>
+    </div>
+
+  <br />
+  <br />
+
+  <app-transaction-list-all [transactions]="transactions"></app-transaction-list-all>
+
+</div>

@@ -1,0 +1,65 @@
+<div class="content" #content>
+
+  <div class="loading-shade" *ngIf="isLoading">
+    <mat-spinner></mat-spinner>
+  </div>
+
+  <div class="column">
+    <span style="float: left;"><h4>Latest Blocks</h4></span>
+    <span style="float: right;"></span>
+  </div>
+  <mat-table [dataSource]="dataSource" matSort matSortActive="height" matSortDirection="desc" matSortDisableClear
+             [class.isMobile]="isMobile">
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+    <ng-container matColumnDef="height">
+      <mat-header-cell *matHeaderCellDef>Height</mat-header-cell>
+      <mat-cell *matCellDef="let blockHeader">
+        <span class="mobile-label">Height:</span>
+        <a [routerLink]="['/blockDetails', blockHeader.height]" (click)="addRouterData(blockHeader)">{{blockHeader.height}}</a>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="timestamp">
+      <mat-header-cell *matHeaderCellDef>Timestamp</mat-header-cell>
+      <mat-cell *matCellDef="let blockHeader">
+        <span class="mobile-label">Timestamp:</span>
+        {{blockHeader.timestamp | date:'dd.MM.yyyy, HH:mm:ss'}}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="generator">
+      <mat-header-cell *matHeaderCellDef>Generator</mat-header-cell>
+      <mat-cell *matCellDef="let blockHeader">
+        <span class="mobile-label">Generator:</span>
+        <a [routerLink]="['/addressDetails', blockHeader.generator]">
+          {{ (blockHeader.generator!=null && blockHeader.generator.length>14) ? (blockHeader.generator |
+          slice:0:14)+'...' : (blockHeader.generator) }}
+        </a>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="blocksize">
+      <mat-header-cell *matHeaderCellDef>Size (bytes)</mat-header-cell>
+      <mat-cell *matCellDef="let blockHeader">
+        <span class="mobile-label">Size (bytes):</span>
+        {{blockHeader.blocksize | number}}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="transactions">
+      <mat-header-cell *matHeaderCellDef>Transactions</mat-header-cell>
+      <mat-cell *matCellDef="let blockHeader">
+        <span class="mobile-label">Size (bytes):</span>
+        {{blockHeader.transactionCount}}
+      </mat-cell>
+    </ng-container>
+
+  </mat-table>
+
+  <mat-paginator ngClass="latestBlocksPaginator" [hidePageSize]="true" [pageSize]="pageSize"
+                 (page)="fillDataSource(); content.scrollIntoView();"></mat-paginator>
+
+</div>
