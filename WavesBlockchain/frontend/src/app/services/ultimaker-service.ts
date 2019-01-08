@@ -2,6 +2,7 @@ import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs/Observable";
 import {Injectable} from "@angular/core";
 import {SystemProperties} from "../shared/SystemProperties";
+import {Printer} from "../shared/Printer";
 
 @Injectable()
 export class UltimakerService {
@@ -21,5 +22,9 @@ export class UltimakerService {
 
   getSystemProperties(): Observable<SystemProperties> {
     return this.http.get<any>(this.apiUrl + "/system");
+  }
+
+  getPrinterStatus(): Observable<Printer>{
+    return this.http.get<any>(this.apiUrl + "/printer");
   }
 }

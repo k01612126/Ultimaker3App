@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {UltimakerService} from "../../services/ultimaker-service";
+import {Printer} from "../../shared/Printer";
 
 
 @Component({
@@ -8,11 +9,11 @@ import {UltimakerService} from "../../services/ultimaker-service";
   styleUrls: ['./status.component.css']
 })
 export class StatusComponent implements OnInit {
-  printerName: string;
+  printer: Printer;
 
   constructor(private ultimakerService: UltimakerService) {
-    ultimakerService.getPrinterName().subscribe(printerName => { //Auslesen und speichern des Namens des Druckers
-      this.printerName=printerName.toString();
+    ultimakerService.getPrinterStatus().subscribe(printerStatus => { //Auslesen und speichern des Namens des Druckers
+      this.printer=printerStatus;
     });
   }
 

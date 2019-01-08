@@ -24,6 +24,7 @@ import { StatusComponent } from './components/status/status.component';
 import {UltimakerService} from "./services/ultimaker-service";
 import { SystemPropertiesComponent } from './components/system-properties/system-properties.component';
 import {SystemProperties} from "./shared/SystemProperties";
+import { PrintJobComponent } from './components/print-job/print-job.component';
 
 const appRoutes: Routes = [
   {path: 'status', component: StatusComponent},
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
   {path: 'latestBlocks', component: LatestBlocksComponent},
   {path: 'transactionDetails/:transactionId', component: TransactionDetailsComponent},
   {path: 'addressDetails/:addressValue', component: AddressDetailsComponent},
-  {path: '', redirectTo: '/latestBlocks', pathMatch: 'full'}
+  {path: '', redirectTo: '/latestBlocks', pathMatch: 'full'},
+  {path: 'printJob', component: PrintJobComponent}
 ];
 
 @NgModule({
@@ -47,7 +49,8 @@ const appRoutes: Routes = [
     OrderDetailsComponent,
     TransferListComponent,
     StatusComponent,
-    SystemPropertiesComponent
+    SystemPropertiesComponent,
+    PrintJobComponent
   ],
   imports: [
     BrowserModule,
