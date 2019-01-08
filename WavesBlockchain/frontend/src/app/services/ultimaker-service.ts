@@ -3,6 +3,7 @@ import {Observable} from "rxjs/Observable";
 import {Injectable} from "@angular/core";
 import {SystemProperties} from "../shared/SystemProperties";
 import {Printer} from "../shared/Printer";
+import {PrintJob} from "../shared/PrintJob";
 
 @Injectable()
 export class UltimakerService {
@@ -26,5 +27,8 @@ export class UltimakerService {
 
   getPrinterStatus(): Observable<Printer>{
     return this.http.get<any>(this.apiUrl + "/printer");
+  }
+  getPrintJob(): Observable<PrintJob>{
+    return this.http.get<any> (this.apiUrl + "/print_job");
   }
 }

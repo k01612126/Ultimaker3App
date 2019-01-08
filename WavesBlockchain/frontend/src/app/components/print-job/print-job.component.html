@@ -1,3 +1,20 @@
-<p>
-  print-job works!
-</p>
+<<mat-card class="systemPropertiesCard">
+  <mat-card-header  class="systemPropertiesCardHeader">
+    <h2>Druckauftrag</h2>
+  </mat-card-header>
+  <mat-card-content  class="systemPropertiesCardContent">
+    <h3>Druckfortschritt: </h3>
+   <p>vergangene Zeit: {{this.printJob.time_elapsed}}</p>
+    <p>gesamte Druckzeit: {{this.printJob.time_total}}</p>
+    <p>verbleibende Zeit: {{this.printJob.time_remaining}}</p>
+    <mat-divider></mat-divider>
+    <h3>Quelle:</h3>
+    <p>Quellschnitstelle: {{this.printJob.source}}</p>
+     <p>Quellapplikation: {{this.printJob.source_application}}</p>
+     <p>Nutzer: {{this.printJob.source_user}}</p>
+     <mat-divider></mat-divider>
+     <h3>Name:</h3>
+     <p>{{this.printJob.name}}</p>
+     <mat-divider></mat-divider>
+   </mat-card-content>
+ </mat-card>
