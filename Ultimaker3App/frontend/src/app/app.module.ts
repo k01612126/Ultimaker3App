@@ -13,12 +13,15 @@ import { StatusComponent } from './components/status/status.component';
 import {UltimakerService} from "./services/ultimaker-service";
 import { SystemPropertiesComponent } from './components/system-properties/system-properties.component';
 import { PrintJobComponent } from './components/print-job/print-job.component';
+import { AuthentificationComponent } from './components/authentification/authentification.component';
 
 const appRoutes: Routes = [
   {path: 'status', component: StatusComponent},
   {path: 'system', component: SystemPropertiesComponent},
   {path: '', redirectTo: '/status', pathMatch: 'full'},
-  {path: 'printJob', component: PrintJobComponent}
+  {path: 'printJob', component: PrintJobComponent},
+  {path: 'authentification', component: AuthentificationComponent}
+
 ];
 
 @NgModule({
@@ -27,7 +30,8 @@ const appRoutes: Routes = [
     ResponsiveSidenavComponent,
     StatusComponent,
     SystemPropertiesComponent,
-    PrintJobComponent
+    PrintJobComponent,
+    AuthentificationComponent
   ],
   imports: [
     BrowserModule,

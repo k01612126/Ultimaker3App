@@ -1,0 +1,34 @@
+<mat-card class="systemPropertiesCard">
+  <mat-card-header  class="systemPropertiesCardHeader">
+    <h2>Authentifzierung</h2>
+  </mat-card-header>
+  <mat-card-content  class="systemPropertiesCardContent">
+
+    <input matInput [(ngModel)]="application" placeholder="Application">
+
+    <input matInput [(ngModel)]="user" placeholder="User">
+
+    <button mat-raised-button (click)="reqAuth()">Request authentification</button>
+
+    <h3>ID: </h3>
+    <p>{{this.authResponse.id}}</p>
+    <mat-divider></mat-divider>
+    <h3>Key:</h3>
+    <p>{{this.authResponse.key}}</p>
+    <mat-divider></mat-divider>
+
+    <button mat-raised-button (click)="checkAcception()">Check Acception</button>
+    <mat-divider></mat-divider>
+    <h3>Message:</h3>
+    <p>{{this.authorization.message}}</p>
+    <mat-divider></mat-divider>
+
+    <a href="http://140.78.73.163/api/v1/auth/verify" target="_blank">Click to verifiy authentification</a>
+    <mat-divider></mat-divider>
+
+    <button mat-raised-button (click)="letitblink()">Let it blink</button>
+    <mat-divider></mat-divider>
+    
+
+  </mat-card-content>
+</mat-card>

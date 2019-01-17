@@ -8,7 +8,7 @@ import {PrintJob} from "../shared/PrintJob";
 @Injectable()
 export class UltimakerService {
 
-  private apiUrl = "http://140.78.73.150/api/v1";
+  private apiUrl = "http://140.78.73.163/api/v1";
 
   constructor(private http: HttpClient) {
   }
@@ -30,5 +30,27 @@ export class UltimakerService {
   }
   getPrintJob(): Observable<PrintJob>{
     return this.http.get<any> (this.apiUrl + "/print_job");
+  }
+
+  requestAuthentication(application: string, user: string): Observable<any> {
+    return this.http.post<any>(this.apiUrl + "/auth/request", {
+      application: application,
+      user: user
+    })
+  }
+
+  checkAcception(id: string): Observable<any> {
+    return this.http.get<any>(this.apiUrl + "/auth/check/"+id);
+  }
+
+  verifyAuthentication(): Observable<any> {
+    return this.http.get<any>(this.apiUrl + "/auth/verify");
+  }
+
+  letItBlink(): Observable<any> {
+    return this.http.post<any>(this.apiUrl + "/printer/led/blink", {
+      frequency: 50,
+      count: 20
+    })
   }
 }
