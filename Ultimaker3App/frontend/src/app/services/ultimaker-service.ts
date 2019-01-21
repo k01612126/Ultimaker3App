@@ -4,6 +4,8 @@ import {Injectable} from "@angular/core";
 import {SystemProperties} from "../shared/SystemProperties";
 import {Printer} from "../shared/Printer";
 import {PrintJob} from "../shared/PrintJob";
+import {Http, Headers} from '@angular/http';
+
 
 @Injectable()
 export class UltimakerService {
@@ -12,6 +14,7 @@ export class UltimakerService {
 
   constructor(private http: HttpClient) {
   }
+
 
   /**
    * Retourniert die aktuelle Blockhöhe

@@ -26,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authentification.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="authentification.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ultimaker-service.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ultimaker-service.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/services/ultimaker-service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
+            <state relative-caret-position="213">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -138,8 +138,8 @@
         <option value="$PROJECT_DIR$/frontend/src/app/shared/Authorization.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/shared/Message.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/services/ultimaker-service.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/services/ultimaker-service.ts" />
       </list>
     </option>
   </component>
@@ -377,12 +377,12 @@
       <workItem from="1547450692273" duration="1043000" />
       <workItem from="1547460371574" duration="20000" />
       <workItem from="1547720542548" duration="128000" />
-      <workItem from="1547720712897" duration="5849000" />
+      <workItem from="1547720712897" duration="6000000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150413000" />
+    <option name="totallyTimeSpent" value="150564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
@@ -754,16 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/ultimaker-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -777,7 +767,17 @@
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/ultimaker-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
