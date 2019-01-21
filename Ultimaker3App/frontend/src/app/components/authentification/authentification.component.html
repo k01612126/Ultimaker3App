@@ -23,7 +23,9 @@
     <p>{{this.authorization.message}}</p>
     <mat-divider></mat-divider>
 
-    <a href="http://140.78.73.163/api/v1/auth/verify" target="_blank">Click to verifiy authentification</a>
+    <button mat-raised-button (click)="verifyAuth()">Verify authentification</button>
+    <h3>Message:</h3>
+    <p>{{this.verification.message}}</p>
     <mat-divider></mat-divider>
 
     <button mat-raised-button (click)="letitblink()">Let it blink</button>
