@@ -5,6 +5,15 @@
   <mat-card-content  class="systemPropertiesCardContent">
     <button mat-raised-button (click)="letitblink()">Make it Blink!</button>
 
+
+
+    <h3>Displayed Message </h3>
+<p>Message:</p>
+    <input matInput [(ngModel)]="message" placeholder="message">
+
+    <input matInput [(ngModel)]="button" placeholder="button">
+
+    <button mat-raised-button (click)="messageDisplay()">DisplayMessage</button>
   <h3>Message:</h3>
   <p>{{this.blinkMessage.message}}</p>
   </mat-card-content>

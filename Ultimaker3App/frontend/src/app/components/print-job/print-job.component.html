@@ -8,9 +8,11 @@
     <mat-divider></mat-divider>
 
     <h3>Progress: </h3>
-     <p>Elapsed Time: {{this.printJob.time_elapsed}} Sekunden</p>
-    <p>Total Time: {{this.printJob.time_total}} Sekunden</p>
-    <p>Remaining Time: {{this.printJob.time_remaining}} Sekunden</p>
+    <p>gesamte Druckzeit: {{time_total.h}} : {{time_total.m}} : {{time_total.s}}</p>
+    <p>vergangene Zeit: {{time_elapsed.h}} : {{time_elapsed.m}} : {{time_elapsed.s}}</p>
+    <p>verbleibende Zeit: {{time_remaining.h}} : {{time_remaining.m}} : {{time_remaining.s}}</p>
+
+
     <mat-divider></mat-divider>
     <h3>Source:</h3>
     <p>Source: {{this.printJob.source}}</p>
@@ -21,6 +23,16 @@
 
      <input #imageInput
            type="file"
-           (change)="processFile(file)">
+           (change)="processFile($event)">
+    <button mat-raised-button (click)="printFile()">print File</button>
+    <mat-divider></mat-divider>
+    <h3>PrintJob State </h3>
+
+    <button mat-raised-button (click)="abortPrintJob()">Abort Print Job</button>
+
+    <mat-divider></mat-divider>
+
+
+
   </mat-card-content>
  </mat-card>

@@ -9,6 +9,9 @@ import {Message} from "../../shared/Message";
 })
 export class PrinterIdentificationComponent implements OnInit {
   blinkMessage  = new Message();
+  displayMessage = new Message();
+  message: string;
+  button: string;
 
 
   constructor(private ultimakerService: UltimakerService) { }
@@ -20,5 +23,11 @@ export class PrinterIdentificationComponent implements OnInit {
     this.ultimakerService.letItBlink().subscribe(response => {
       this.blinkMessage = response;
     })
+  }
+
+  messageDisplay(){
+this.ultimakerService.messageDisplay(this.message, this.button).subscribe(response => {
+  this.displayMessage = response;
+})
   }
 }

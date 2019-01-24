@@ -48,7 +48,7 @@ export class UltimakerService {
 
   verifyAuthentication(): Observable<any> {
 
-    return this.http.get<any>(this.apiUrl + "/auth/verify",{headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="7670fbff84636962c127681a81f92bb2", uri="/api/v1/auth/verify", response="0063683199ed86af52c6babf9e0dfa62", qop=auth, nc=00000002, cnonce="a4ae029a5ea3dc09"'
+    return this.http.get<any>(this.apiUrl + "/auth/verify",{headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="04187a847e799c48f2ec4e4214a15d5c", uri="/api/v1/auth/verify", response="fdbdd48dcd61a530126a44e8dec851c8", qop=auth, nc=00000004, cnonce="e4c8bd89dbfbbb0a"'
     )
         .set('Content-Type', 'application/json')});
   }
@@ -56,15 +56,31 @@ export class UltimakerService {
     return this.http.post<any>(this.apiUrl + "/printer/led/blink", {
       frequency: 5,
       count: 20
-    },{headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="683c2953e4f90cc9a23bce825ed74467", uri="/api/v1/printer/led/blink", response="a2ab58e79f40a1f5ca8751d14ae6b90e", qop=auth, nc=00000003, cnonce="447c97f4567f854a"')
+    },{headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="04187a847e799c48f2ec4e4214a15d5c", uri="/api/v1/printer/led/blink", response="316656f4cfce34752d3bb3cc0b7b7663", qop=auth, nc=00000005, cnonce="c2b4c21ebd76e4ba"')
         .set('Content-Type', 'application/json')})
   }
 
-  startPrintJob(file: any): Observable<any> {
+  startPrintJob(): Observable<any> {
     return this.http.post<any> (this.apiUrl + "/print_job", {
       jobname: "asdfasdf",
-      file: file
-    }, {headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="683c2953e4f90cc9a23bce825ed74467", uri="/api/v1/printer/led/blink", response="a2ab58e79f40a1f5ca8751d14ae6b90e", qop=auth, nc=00000003, cnonce="447c97f4567f854a"')
+      file: "C:\Users\anjag\Documents\JKU\Bachelorstudium-WIN-5.Semester\CE KT\UM3_Pikachu_V2.gcode"
+    }, {headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="d91232471f868f71d14199a4cbd83c12", uri="/api/v1/print_job", response="0a1b6f57ce9a515933424b37ac7f7eea", qop=auth, nc=00000002, cnonce="3f84ef6089ff35bc"')
+        .set('Content-Type', 'application/json')})
+  }
+
+  messageDisplay(message:string, button:string): Observable<any>{
+    return this.http.put<any>(this.apiUrl + "/system/display_message", {
+      message: message,
+      button_caption: button
+    },{headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="04187a847e799c48f2ec4e4214a15d5c", uri="/api/v1/system/display_message", response="e2a9866b580534e06942b44f0e0e58cb", qop=auth, nc=00000006, cnonce="07554418635d7266"')
+
+      .set('Content-Type', 'application/json')})
+  }
+
+  abortPrintJob():Observable<any>{
+    return this.http.put<any>(this.apiUrl + "/print_job/state", {
+      target: "abort"
+    }, {headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="04187a847e799c48f2ec4e4214a15d5c", uri="/api/v1/print_job/state", response="82f6e57a2d0a74f0b5ad29e21771d74d", qop=auth, nc=00000002, cnonce="043c60096fe32ed4"')
         .set('Content-Type', 'application/json')})
   }
 }
