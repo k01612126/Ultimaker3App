@@ -5,8 +5,10 @@ export class Time {
 
 
   constructor(sec: number) {
-    this.h = sec/3600;
-    this.m = (sec-this.h*3600) / 60 ;
-    this.s = sec - this.h * 3600 - this.m * 60;
+
+    this.s = sec%60;
+    this.m = (sec-this.s) / 60 % 60;
+
+    this.h = (sec-this.s-this.m*60)/3600 ;
   }
 }

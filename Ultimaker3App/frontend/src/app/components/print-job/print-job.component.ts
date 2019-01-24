@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnChanges, OnInit} from '@angular/core';
 import {UltimakerService} from "../../services/ultimaker-service";
 import {PrintJob} from "../../shared/PrintJob";
 import {Time} from "../../shared/Time";
@@ -18,6 +18,8 @@ export class PrintJobComponent implements OnInit {
   time_elapsed: Time=new Time(0);
   time_total: Time= new Time(0);
  abortedPrintJob;
+ pausedPrintJob;
+ resumedPrintJob;
 
 
 
@@ -30,17 +32,21 @@ export class PrintJobComponent implements OnInit {
     this.printJob.source_user = "-";
     this.printJob.source_application = "-";
 
-    ultimakerService.getPrintJob().subscribe(printJobStatus => {
+
+  }
+
+  ngOnInit() {
+    this.ultimakerService.getPrintJob().subscribe(printJobStatus => {
       this.printJob=printJobStatus;
       this.printJob.time_remaining = this.printJob.time_total - this.printJob.time_elapsed;
       this.time_remaining = new Time(this.printJob.time_remaining);
       this.time_elapsed = new Time(this.printJob.time_elapsed);
       this.time_total = new Time(this.printJob.time_total);
+      console.log(this.printJob.time_total);
     });
   }
 
-  ngOnInit() {
-  }
+
 
   processFile(event) {
    let fileList: FileList= event.target.files;
@@ -68,6 +74,18 @@ export class PrintJobComponent implements OnInit {
   abortPrintJob(){
     this.ultimakerService.abortPrintJob().subscribe(result => {
       this.abortedPrintJob = result;
+    })
+  }
+
+  pausePrintJob() {
+    this.ultimakerService.pausePrintJob().subscribe(result => {
+      this.pausedPrintJob = result;
+    })
+  }
+
+  resumePrintJob() {
+    this.ultimakerService.resumePrintJob().subscribe(result => {
+      this.resumedPrintJob = result;
     })
   }
 }

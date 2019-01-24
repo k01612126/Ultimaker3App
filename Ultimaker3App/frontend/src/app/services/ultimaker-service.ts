@@ -83,4 +83,18 @@ export class UltimakerService {
     }, {headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="04187a847e799c48f2ec4e4214a15d5c", uri="/api/v1/print_job/state", response="82f6e57a2d0a74f0b5ad29e21771d74d", qop=auth, nc=00000002, cnonce="043c60096fe32ed4"')
         .set('Content-Type', 'application/json')})
   }
+
+  pausePrintJob():Observable<any>{
+    return this.http.put<any>(this.apiUrl + "/print_job/state", {
+      target: "pause"
+    }, {headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="04187a847e799c48f2ec4e4214a15d5c", uri="/api/v1/print_job/state", response="d53f37dd99cf4890418161fb047b61a9", qop=auth, nc=00000014, cnonce="8987b907e753f97f"')
+        .set('Content-Type', 'application/json')})
+  }
+
+  resumePrintJob() :Observable<any>{
+    return this.http.put<any>(this.apiUrl + "/print_job/state", {
+      target: "print"
+    }, {headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="04187a847e799c48f2ec4e4214a15d5c", uri="/api/v1/print_job/state", response="49c171147abbaa8a370dd9f6313c8de8", qop=auth, nc=00000015, cnonce="84fa06fa1ccb691d"')
+        .set('Content-Type', 'application/json')})
+  }
 }
