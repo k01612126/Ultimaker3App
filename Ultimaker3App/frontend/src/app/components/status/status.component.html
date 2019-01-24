@@ -1,15 +1,15 @@
 <mat-card class="systemPropertiesCard">
   <mat-card-header  class="systemPropertiesCardHeader">
-    <h2>Druckerstatus</h2>
+    <h2>Printer</h2>
   </mat-card-header>
   <mat-card-content  class="systemPropertiesCardContent">
-    <h3>Druckstatus: </h3>
+    <h3>Printer Status: </h3>
     <p>{{this.printer.status}}</p>
     <mat-divider></mat-divider>
-    <h3>aktuelle Temperatur:</h3>
+    <h3>Current Temperature:</h3>
     <p>{{this.printer.bed.temperature.current}}</p>
     <mat-divider></mat-divider>
-    <h3>Zieltemperatur:</h3>
+    <h3>Goal Temperature:</h3>
     <p>{{this.printer.bed.temperature.target}}</p>
     <mat-divider></mat-divider>
   </mat-card-content>

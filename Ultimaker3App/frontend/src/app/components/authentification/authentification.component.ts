@@ -14,7 +14,6 @@ export class AuthentificationComponent implements OnInit {
   user: string="Flanjenny";
   authorization= new Message();
   verification= new Message();
-  blinkMessage  = new Message();
 
   constructor(private ultimakerService: UltimakerService) {
 
@@ -42,9 +41,5 @@ export class AuthentificationComponent implements OnInit {
     });
   }
 
-  letitblink() {
-    this.ultimakerService.letItBlink().subscribe(response => {
-      this.blinkMessage = response;
-    })
-  }
+
 }

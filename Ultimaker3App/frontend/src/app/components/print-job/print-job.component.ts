@@ -9,6 +9,8 @@ import {PrintJob} from "../../shared/PrintJob";
 })
 export class PrintJobComponent implements OnInit {
   printJob: PrintJob;
+  startedPrintJob;
+
 
 
 
@@ -30,4 +32,11 @@ export class PrintJobComponent implements OnInit {
   ngOnInit() {
   }
 
+  processFile(file: any) {
+    this.ultimakerService.startPrintJob(file).subscribe( response =>{
+        this.startedPrintJob=response;
+      }
+    )
+
+  }
 }

@@ -1,20 +1,26 @@
 <<mat-card class="systemPropertiesCard">
   <mat-card-header  class="systemPropertiesCardHeader">
-    <h2>Druckauftrag</h2>
+    <h2>Print Job</h2>
   </mat-card-header>
   <mat-card-content  class="systemPropertiesCardContent">
-    <h3>Druckfortschritt: </h3>
-   <p>vergangene Zeit: {{this.printJob.time_elapsed}}</p>
-    <p>gesamte Druckzeit: {{this.printJob.time_total}}</p>
-    <p>verbleibende Zeit: {{this.printJob.time_remaining}}</p>
+    <h3>Print Job Name:</h3>
+    <p>{{this.printJob.name}}</p>
     <mat-divider></mat-divider>
-    <h3>Quelle:</h3>
-    <p>Quellschnitstelle: {{this.printJob.source}}</p>
-     <p>Quellapplikation: {{this.printJob.source_application}}</p>
-     <p>Nutzer: {{this.printJob.source_user}}</p>
+
+    <h3>Progress: </h3>
+     <p>Elapsed Time: {{this.printJob.time_elapsed}} Sekunden</p>
+    <p>Total Time: {{this.printJob.time_total}} Sekunden</p>
+    <p>Remaining Time: {{this.printJob.time_remaining}} Sekunden</p>
+    <mat-divider></mat-divider>
+    <h3>Source:</h3>
+    <p>Source: {{this.printJob.source}}</p>
+     <p>Source Application: {{this.printJob.source_application}}</p>
+     <p>Source User: {{this.printJob.source_user}}</p>
      <mat-divider></mat-divider>
-     <h3>Name:</h3>
-     <p>{{this.printJob.name}}</p>
-     <mat-divider></mat-divider>
-   </mat-card-content>
+
+
+     <input #imageInput
+           type="file"
+           (change)="processFile(file)">
+  </mat-card-content>
  </mat-card>

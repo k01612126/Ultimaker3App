@@ -59,4 +59,12 @@ export class UltimakerService {
     },{headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="683c2953e4f90cc9a23bce825ed74467", uri="/api/v1/printer/led/blink", response="a2ab58e79f40a1f5ca8751d14ae6b90e", qop=auth, nc=00000003, cnonce="447c97f4567f854a"')
         .set('Content-Type', 'application/json')})
   }
+
+  startPrintJob(file: any): Observable<any> {
+    return this.http.post<any> (this.apiUrl + "/print_job", {
+      jobname: "asdfasdf",
+      file: file
+    }, {headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="683c2953e4f90cc9a23bce825ed74467", uri="/api/v1/printer/led/blink", response="a2ab58e79f40a1f5ca8751d14ae6b90e", qop=auth, nc=00000003, cnonce="447c97f4567f854a"')
+        .set('Content-Type', 'application/json')})
+  }
 }

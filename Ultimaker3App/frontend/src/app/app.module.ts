@@ -14,14 +14,15 @@ import {UltimakerService} from "./services/ultimaker-service";
 import { SystemPropertiesComponent } from './components/system-properties/system-properties.component';
 import { PrintJobComponent } from './components/print-job/print-job.component';
 import { AuthentificationComponent } from './components/authentification/authentification.component';
+import { PrinterIdentificationComponent } from './components/printer-identification/printer-identification.component';
 
 const appRoutes: Routes = [
   {path: 'status', component: StatusComponent},
   {path: 'system', component: SystemPropertiesComponent},
   {path: '', redirectTo: '/status', pathMatch: 'full'},
   {path: 'printJob', component: PrintJobComponent},
-  {path: 'authentification', component: AuthentificationComponent}
-
+  {path: 'authentication', component: AuthentificationComponent},
+  {path: 'identification', component: PrinterIdentificationComponent}
 ];
 
 @NgModule({
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     StatusComponent,
     SystemPropertiesComponent,
     PrintJobComponent,
-    AuthentificationComponent
+    AuthentificationComponent,
+    PrinterIdentificationComponent
   ],
   imports: [
     BrowserModule,
