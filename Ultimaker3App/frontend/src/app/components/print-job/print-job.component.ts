@@ -27,7 +27,7 @@ export class PrintJobComponent implements OnInit {
     this.printJob= new PrintJob();
     this.printJob.time_total = 0;
     this.printJob.time_elapsed = 0;
-    this.printJob.name = "-";
+    this.printJob.name = "There is currently no print job!";
     this.printJob.source = "-";
     this.printJob.source_user = "-";
     this.printJob.source_application = "-";

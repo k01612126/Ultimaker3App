@@ -26,10 +26,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="print-job.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="print-job.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
+            <state relative-caret-position="357">
               <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
             </state>
           </provider>
@@ -55,14 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authentification.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.ts">
+      <file leaf-file-name="print-job.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="391">
+              <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -178,7 +175,6 @@
         <option value="$PROJECT_DIR$/frontend/src/app/services/ImageService.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/shared/Time.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/responsive-sidenav/responsive-sidenav.component.css" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/status/status.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/styles.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.ts" />
@@ -190,6 +186,7 @@
         <option value="$PROJECT_DIR$/frontend/src/app/components/status/status.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/system-properties/system-properties.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.ts" />
       </list>
     </option>
   </component>
@@ -466,12 +463,12 @@
       <workItem from="1547720712897" duration="6000000" />
       <workItem from="1548082134368" duration="688000" />
       <workItem from="1548348722557" duration="544000" />
-      <workItem from="1548506892565" duration="13011000" />
+      <workItem from="1548506892565" duration="13149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180438000" />
+    <option name="totallyTimeSpent" value="180576000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
@@ -802,13 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -885,8 +875,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
+        <state relative-caret-position="357">
           <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
         </state>
       </provider>
     </entry>
