@@ -1,11 +1,13 @@
 <div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
 
+
   <mat-toolbar color="primary" class="example-toolbar">
 
     <button mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
     <h1 class="example-app-name">Ultimaker 3 App</h1>
+    <img src="assets/ultimaker_logo.png"align = "rigth" class = "logo"/>
   </mat-toolbar>
 
   <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
@@ -16,13 +18,13 @@
         <a mat-list-item routerLink="/status" (click)="mobileQuery.matches ? snav.toggle() : ''"
            routerLinkActive="active-link">Printer</a>
         <a mat-list-item routerLink="/system" (click)="mobileQuery.matches ? snav.toggle() : ''"
-           routerLinkActive="active-link">System Properties</a>
+           routerLinkActive="active-link">System properties</a>
         <a mat-list-item routerLink="/printJob" (click)="mobileQuery.matches ? snav.toggle() : ''"
-           routerLinkActive="active-link">Print Job</a>
+           routerLinkActive="active-link">Print job</a>
         <a mat-list-item routerLink="/authentication" (click)="mobileQuery.matches ? snav.toggle() : ''"
            routerLinkActive="active-link">Authentication</a>
         <a mat-list-item routerLink="/identification" (click)="mobileQuery.matches ? snav.toggle() : ''"
-           routerLinkActive="active-link">Find Printer</a>
+           routerLinkActive="active-link">Control printer</a>
       </mat-list>
     </mat-sidenav>
 

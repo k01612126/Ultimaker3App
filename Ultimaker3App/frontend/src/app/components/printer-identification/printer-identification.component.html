@@ -1,20 +1,25 @@
 <mat-card class="systemPropertiesCard">
   <mat-card-header  class="systemPropertiesCardHeader">
-    <h2>Find Printer</h2>
+    <h2>Control printer</h2>
   </mat-card-header>
   <mat-card-content  class="systemPropertiesCardContent">
-    <button mat-raised-button (click)="letitblink()">Make it Blink!</button>
 
+    <h3>Blink function</h3>
+    <input matInput [(ngModel)]="frequency" placeholder="frequency">
 
+    <input matInput [(ngModel)]="count" placeholder="count">
 
-    <h3>Displayed Message </h3>
-<p>Message:</p>
+   <p> <button mat-raised-button (click)="letitblink()" matTooltip="Be cool and let your printer blink like a star!">Let it blink!</button> </p>
+
+    <mat-divider></mat-divider>
+
+    <h3>Display message on printer </h3>
+
     <input matInput [(ngModel)]="message" placeholder="message">
 
     <input matInput [(ngModel)]="button" placeholder="button">
 
-    <button mat-raised-button (click)="messageDisplay()">DisplayMessage</button>
-  <h3>Message:</h3>
-  <p>{{this.blinkMessage.message}}</p>
+   <p><button mat-raised-button (click)="messageDisplay()"matTooltip="Don't be shy and send your message to printer!">Display message</button></p>
+
   </mat-card-content>
 </mat-card>

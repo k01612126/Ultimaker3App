@@ -1,4 +1,4 @@
-<<mat-card class="systemPropertiesCard">
+<mat-card class="systemPropertiesCard">
   <mat-card-header  class="systemPropertiesCardHeader">
     <h2>Print Job</h2>
   </mat-card-header>
@@ -21,16 +21,12 @@
      <mat-divider></mat-divider>
 
 
-     <input #imageInput
-           type="file"
-           (change)="processFile($event)">
-    <button mat-raised-button (click)="printFile()">print File</button>
-    <mat-divider></mat-divider>
+
     <h3>PrintJob State </h3>
 
-    <button mat-raised-button (click)="abortPrintJob()">Abort</button>
-    <button mat-raised-button (click)="pausePrintJob()">Pause</button>
-    <button mat-raised-button (click)="resumePrintJob()">Resume</button>
+   <p> <button mat-raised-button (click)="abortPrintJob()" matTooltip="If you do not like your print, cancel it!">Abort</button>
+    <button mat-raised-button (click)="pausePrintJob()" matTooltip="Pause only if it is necessary!!!">Pause</button>
+    <button mat-raised-button (click)="resumePrintJob()" matTooltip="Resume your nice print job!">Resume</button> </p>
 
     <mat-divider></mat-divider>
 

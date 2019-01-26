@@ -6,7 +6,7 @@ body {
 }
 
 .mat-toolbar.mat-primary {
-  background-color: #1c184e;
+  background-color: #ccffff;
 }
 
 .basic-container {
@@ -92,7 +92,7 @@ a {
 }
 
 .column {
-  background-color: #1c184e;
+  background-color: #ccffff;
   width: 100%;
   height: auto;
   overflow: auto;
@@ -106,7 +106,7 @@ a {
 
 h4 {
   margin: 0;
-  color: white;
+  color: black;
   font-size: 19px;
   font-weight: normal;
 }
@@ -118,4 +118,8 @@ h4 {
 .mat-header-cell {
   font-size: 15px;
   font-weight: normal;
+}
+
+h3{
+  color: dimgrey;
 }

@@ -13,12 +13,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ultimaker-service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/services/ultimaker-service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="96" column="293" selection-start-line="96" selection-start-column="293" selection-end-line="96" selection-end-column="293" />
+            <state relative-caret-position="359">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
               </folding>
@@ -26,20 +26,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authentification.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.html">
+      <file leaf-file-name="print-job.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="11" />
+            <state relative-caret-position="261">
+              <caret line="28" column="95" selection-start-line="28" selection-start-column="95" selection-end-line="28" selection-end-column="95" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="print-job.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.html">
+      <file leaf-file-name="authentification.component.spec.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.spec.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+            <state>
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authentification.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="100" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
             </state>
           </provider>
         </entry>
@@ -47,8 +58,8 @@
       <file leaf-file-name="authentification.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="357">
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -56,11 +67,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="print-job.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="print-job.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+            <state relative-caret-position="357">
+              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthResponse.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/shared/AuthResponse.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="printer-identification.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/printer-identification/printer-identification.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="64" lean-forward="true" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="printer-identification.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/printer-identification/printer-identification.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -68,18 +106,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Time.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/shared/Time.ts">
+      <file leaf-file-name="responsive-sidenav.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/responsive-sidenav/responsive-sidenav.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="493">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="print-job.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.css">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -106,9 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/app/components/group-edit-dialog/group-edit-dialog.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/transaction-details/transaction-details.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/shared/AddressAssetBalance.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/shared/Member.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/group-statistics/group-statistics.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/group-statistics/group-statistics.component.ts" />
@@ -144,19 +174,22 @@
         <option value="$PROJECT_DIR$/frontend/src/app/shared/AuthResponse.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/shared/Authorization.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/shared/Message.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/responsive-sidenav/responsive-sidenav.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/status/status.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/services/ImageService.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/printer-identification/printer-identification.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/printer-identification/printer-identification.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/services/ultimaker-service.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/shared/Time.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/responsive-sidenav/responsive-sidenav.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/status/status.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/status/status.component.css" />
+        <option value="$PROJECT_DIR$/frontend/src/styles.css" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/responsive-sidenav/responsive-sidenav.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/services/ultimaker-service.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/printer-identification/printer-identification.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/printer-identification/printer-identification.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.html" />
       </list>
     </option>
   </component>
@@ -185,8 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,6 +285,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="responsive-sidenav" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waves-explorer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ultimaker3App" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="status" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -281,11 +321,20 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="shared" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="waves-explorer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ultimaker3App" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -416,11 +465,13 @@
       <workItem from="1547720542548" duration="128000" />
       <workItem from="1547720712897" duration="6000000" />
       <workItem from="1548082134368" duration="688000" />
+      <workItem from="1548348722557" duration="544000" />
+      <workItem from="1548506892565" duration="12674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166482000" />
+    <option name="totallyTimeSpent" value="180101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
@@ -431,56 +482,34 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5074277" side_tool="true" visible="true" weight="0.19104992" />
-      <window_info anchor="right" id="Maven Projects" order="0" />
-      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.75572914" weight="0.38853502" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.4925723" visible="true" weight="0.19104992" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="TypeScript" order="1" />
-      <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.82735044" visible="true" weight="0.30023456" />
-      <window_info anchor="right" id="Database" order="2" />
-      <window_info id="Structure" order="6" sideWeight="0.17264958" side_tool="true" weight="0.84444445" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50666666" side_tool="true" weight="0.35215947" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.82735044" weight="0.84444445" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="4" />
-      <window_info anchor="bottom" id="TypeScript" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49333334" weight="0.35215947" />
-      <window_info id="Structure" order="6" sideWeight="0.17264958" side_tool="true" weight="0.84444445" />
-      <window_info anchor="right" id="Palette" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Maven Projects" order="0" />
-      <window_info id="Web" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-      <window_info id="Image Layers" order="1" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Database" order="2" />
-      <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="bottom" id="TODO" order="14" />
-      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49840087" visible="true" weight="0.3297062" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Bean Validation" order="5" />
       <window_info anchor="bottom" id="Run" order="9" sideWeight="0.75572914" weight="0.38853502" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32908705" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49333334" weight="0.35111877" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="TypeScript" order="1" />
       <window_info id="Designer" order="0" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.82735044" visible="true" weight="0.32994527" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info id="Structure" order="6" sideWeight="0.17264958" side_tool="true" weight="0.84444445" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Java Enterprise" order="4" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.32908705" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49840087" visible="true" weight="0.3297062" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -493,11 +522,11 @@
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.49333334" visible="true" weight="0.35215947" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49333334" weight="0.35111877" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50666666" side_tool="true" visible="true" weight="0.35215947" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50666666" side_tool="true" weight="0.35215947" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.32908705" />
       <window_info anchor="bottom" id="TODO" order="14" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
@@ -505,17 +534,17 @@
       <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="6" />
       <window_info anchor="right" id="Maven Projects" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.82735044" visible="true" weight="0.84444445" />
+      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49840087" visible="true" weight="0.3297062" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.82735044" visible="true" weight="0.0" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info id="Structure" order="6" sideWeight="0.17264958" side_tool="true" visible="true" weight="0.84444445" />
+      <window_info id="Structure" order="6" sideWeight="0.17264958" side_tool="true" weight="0.84444445" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49840087" visible="true" weight="0.3297062" />
-      <window_info anchor="right" id="Bean Validation" order="5" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,37 +562,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/shared/BedTemp.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/e2e/app.e2e-spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/responsive-sidenav/responsive-sidenav.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/status/status.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/responsive-sidenav/responsive-sidenav.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -714,13 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/shared/AuthResponse.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/shared/Message.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -742,20 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/status/status.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/responsive-sidenav/responsive-sidenav.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="63" lean-forward="true" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -763,13 +740,6 @@
           <folding>
             <element signature="e#0#56#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/system-properties/system-properties.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -798,34 +768,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/shared/Time.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/responsive-sidenav/responsive-sidenav.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="56" column="15" lean-forward="true" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/system-properties/system-properties.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/status/status.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/status/status.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="123" column="17" selection-start-line="123" selection-start-column="17" selection-end-line="123" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/shared/AuthResponse.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/responsive-sidenav/responsive-sidenav.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/printer-identification/printer-identification.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="493">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/services/ultimaker-service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="96" column="293" selection-start-line="96" selection-start-column="293" selection-end-line="96" selection-end-column="293" />
+        <state relative-caret-position="359">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
           </folding>
@@ -834,38 +852,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/printer-identification/printer-identification.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="187">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/printer-identification/printer-identification.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="64" lean-forward="true" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+        <state relative-caret-position="261">
+          <caret line="28" column="95" selection-start-line="28" selection-start-column="95" selection-end-line="28" selection-end-column="95" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/shared/Time.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/print-job/print-job.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+        <state>
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#73#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/authentification/authentification.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="100" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
         </state>
       </provider>
     </entry>

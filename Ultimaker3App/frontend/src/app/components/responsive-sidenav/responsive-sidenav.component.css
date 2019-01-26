@@ -23,6 +23,7 @@
 h1.example-app-name {
   margin-left: 8px;
   font-size: 25px;
+  color: black;
 }
 
 .example-sidenav-container {
@@ -52,7 +53,7 @@ mat-sidenav {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #1c184e;
+  background-color:#44b3be;
   color: white;
   text-align: right;
   height: 30px;
@@ -69,4 +70,18 @@ p{
   .footer{
     height: 40px;
   }
+}
+.logo{
+  height: 60px;
+  position:fixed;
+  right: 10px;
+}
+
+@media (max-width: 630px) {
+  .logo{
+    right: -1000px;
+  }
+}
+.mat-icon-button{
+  color: black;
 }

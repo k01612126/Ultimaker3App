@@ -8,7 +8,7 @@
 
     <input matInput [(ngModel)]="user" placeholder="User">
 
-    <button mat-raised-button (click)="reqAuth()">Request authentification</button>
+   <p> <button mat-raised-button (click)="reqAuth()"matTooltip="Let your printer know who you are!">Request authentification</button> </p>
 
     <h3>ID: </h3>
     <p>{{this.authResponse.id}}</p>
@@ -16,12 +16,12 @@
     <p>{{this.authResponse.key}}</p>
     <mat-divider></mat-divider>
 
-    <button mat-raised-button (click)="checkAcception()">Check Acception</button>
+    <button mat-raised-button (click)="checkAcception()"matTooltip="Check, if he likes you!">Check acception</button>
     <h3>Message:</h3>
     <p>{{this.authorization.message}}</p>
     <mat-divider></mat-divider>
 
-    <button mat-raised-button (click)="verifyAuth()">Verify authentification</button>
+    <button mat-raised-button (click)="verifyAuth()"matTooltip="Check, if he really really likes you!">Verify authentification</button>
     <h3>Message:</h3>
     <p>{{this.verification.message}}</p>
     <mat-divider></mat-divider>

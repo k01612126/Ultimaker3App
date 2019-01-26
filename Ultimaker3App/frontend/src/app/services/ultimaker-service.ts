@@ -48,15 +48,15 @@ export class UltimakerService {
 
   verifyAuthentication(): Observable<any> {
 
-    return this.http.get<any>(this.apiUrl + "/auth/verify",{headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="04187a847e799c48f2ec4e4214a15d5c", uri="/api/v1/auth/verify", response="fdbdd48dcd61a530126a44e8dec851c8", qop=auth, nc=00000004, cnonce="e4c8bd89dbfbbb0a"'
+    return this.http.get<any>(this.apiUrl + "/auth/verify",{headers: new HttpHeaders().set('Authorization', 'Digest username="c0ec300894cbfa28b91f953a2ba3b4b8", realm="Jedi-API", nonce="87a4a4371c781df291a5096d4dd7a5d6", uri="/api/v1/auth/verify", response="be7595d2cc253c9a52388b17ed614930", qop=auth, nc=00000003, cnonce="6fee0ada089304f1"'
     )
         .set('Content-Type', 'application/json')});
   }
-  letItBlink(): Observable<any> {
+  letItBlink(frequency: number, count: number): Observable<any> {
     return this.http.post<any>(this.apiUrl + "/printer/led/blink", {
-      frequency: 5,
-      count: 20
-    },{headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="04187a847e799c48f2ec4e4214a15d5c", uri="/api/v1/printer/led/blink", response="316656f4cfce34752d3bb3cc0b7b7663", qop=auth, nc=00000005, cnonce="c2b4c21ebd76e4ba"')
+      frequency: frequency,
+      count: count
+    },{headers: new HttpHeaders().set('Authorization', 'Digest username="c0ec300894cbfa28b91f953a2ba3b4b8", realm="Jedi-API", nonce="87a4a4371c781df291a5096d4dd7a5d6", uri="/api/v1/printer/led/blink", response="24675be40ac78655fe50fc5a9710cda7", qop=auth, nc=00000002, cnonce="591c1e1cf4cdd10e"')
         .set('Content-Type', 'application/json')})
   }
 
@@ -72,7 +72,7 @@ export class UltimakerService {
     return this.http.put<any>(this.apiUrl + "/system/display_message", {
       message: message,
       button_caption: button
-    },{headers: new HttpHeaders().set('Authorization', 'Digest username="4694f65225e3e183bab42f71a405e102", realm="Jedi-API", nonce="04187a847e799c48f2ec4e4214a15d5c", uri="/api/v1/system/display_message", response="e2a9866b580534e06942b44f0e0e58cb", qop=auth, nc=00000006, cnonce="07554418635d7266"')
+    },{headers: new HttpHeaders().set('Authorization', 'Digest username="c0ec300894cbfa28b91f953a2ba3b4b8", realm="Jedi-API", nonce="2524d0b52fac603c2acf8221188c9cc0", uri="/api/v1/system/display_message", response="18f26e1b97fafb23cd5f53466130c54c", qop=auth, nc=00000002, cnonce="dcb3ca7f68167fe1"')
 
       .set('Content-Type', 'application/json')})
   }

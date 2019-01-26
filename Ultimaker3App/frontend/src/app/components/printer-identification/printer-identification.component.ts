@@ -12,6 +12,8 @@ export class PrinterIdentificationComponent implements OnInit {
   displayMessage = new Message();
   message: string;
   button: string;
+  frequency: number;
+  count: number;
 
 
   constructor(private ultimakerService: UltimakerService) { }
@@ -20,7 +22,7 @@ export class PrinterIdentificationComponent implements OnInit {
   }
 
   letitblink() {
-    this.ultimakerService.letItBlink().subscribe(response => {
+    this.ultimakerService.letItBlink(this.frequency, this.count).subscribe(response => {
       this.blinkMessage = response;
     })
   }

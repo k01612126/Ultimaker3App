@@ -10,13 +10,16 @@ import {Message} from "../../shared/Message";
 })
 export class AuthentificationComponent implements OnInit {
   authResponse= new AuthResponse();
-  application: string="Ultimaker3 App";
-  user: string="Flanjenny";
+  application: string="Application";
+  user: string="User";
   authorization= new Message();
   verification= new Message();
 
   constructor(private ultimakerService: UltimakerService) {
-
+  this.authResponse.id = "-";
+  this.authResponse.key = "-";
+  this.authorization.message = "-";
+  this.verification.message ="-";
   }
 
   ngOnInit() {
