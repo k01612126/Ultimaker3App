@@ -1,28 +1,28 @@
 <mat-card class="systemPropertiesCard">
   <mat-card-header  class="systemPropertiesCardHeader">
-    <h2>Print Job</h2>
+    <h2>Print job</h2>
   </mat-card-header>
   <mat-card-content  class="systemPropertiesCardContent">
-    <h3>Print Job Name:</h3>
+    <h3>Print job name:</h3>
     <p>{{this.printJob.name}}</p>
     <mat-divider></mat-divider>
 
     <h3>Progress: </h3>
-    <p>gesamte Druckzeit: {{time_total.h}} : {{time_total.m}} : {{time_total.s}}</p>
-    <p>vergangene Zeit: {{time_elapsed.h}} : {{time_elapsed.m}} : {{time_elapsed.s}}</p>
-    <p>verbleibende Zeit: {{time_remaining.h}} : {{time_remaining.m}} : {{time_remaining.s}}</p>
+    <p>Total time: {{time_total.h}} : {{time_total.m}} : {{time_total.s}}</p>
+    <p>Elapsed time: {{time_elapsed.h}} : {{time_elapsed.m}} : {{time_elapsed.s}}</p>
+    <p>Remained time: {{time_remaining.h}} : {{time_remaining.m}} : {{time_remaining.s}}</p>
 
 
     <mat-divider></mat-divider>
     <h3>Source:</h3>
     <p>Source: {{this.printJob.source}}</p>
-     <p>Source Application: {{this.printJob.source_application}}</p>
-     <p>Source User: {{this.printJob.source_user}}</p>
+     <p>Source application: {{this.printJob.source_application}}</p>
+     <p>Source user: {{this.printJob.source_user}}</p>
      <mat-divider></mat-divider>
 
 
 
-    <h3>PrintJob State </h3>
+    <h3>Print job state </h3>
 
    <p> <button mat-raised-button (click)="abortPrintJob()" matTooltip="If you do not like your print, cancel it!">Abort</button>
     <button mat-raised-button (click)="pausePrintJob()" matTooltip="Pause only if it is necessary!!!">Pause</button>
